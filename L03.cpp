@@ -66,16 +66,17 @@ int main()
 	cout << "Podaj liczbe rzeczywista (podstawe) -> ";
 	cin >> x;
 
-	for (int i = 0; i < n; i++)
+	for (int i = 1; i < n; i++)
 	{
-		for (int j = 0; j < x; j++)
+		x += x;
+
+		for (int j = 1; j < x; j++)
 		{
-			wynik=x + x;
+			wynik=wynik + x;
 		}
-		x+=wynik;
 		
 	}
-	cout << "Wynik potegowania wynosi = " << x << endl;
+	cout << "Wynik potegowania wynosi = " << x << "   " << wynik << endl;
 }
 #endif // Zadanie3B
 
