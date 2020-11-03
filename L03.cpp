@@ -4,7 +4,7 @@
 #include <cstdio>
 using namespace std;
 
-#define Zadanie3C
+#define Zadanie3B
 
 #ifdef Zadanie3A
 
@@ -66,13 +66,14 @@ int main()
 	cout << "Podaj liczbe rzeczywista (podstawe) -> ";
 	cin >> x;
 
-	for (int i = 0; i < x; i++)
+	for (int i = 0; i < n; i++)
 	{
-		
-		for (int j = 0; j < n; j++)
+		for (int j = 0; j < x; j++)
 		{
-			wynik += x;
+			wynik=x + x;
 		}
+		x+=wynik;
+		
 	}
 	cout << "Wynik potegowania wynosi = " << x << endl;
 }
