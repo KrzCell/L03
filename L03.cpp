@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-#define Zadanie3A
+#define Zadanie3C
 
 #ifdef Zadanie3A
 
@@ -49,6 +49,39 @@ int main()
 }
 
 #endif // Zadanie3A
+
+#ifdef Zadanie3B
+int main()
+{
+	double x = 0, wynik = 1;
+	int n = 0;
+	do
+	{
+		cout << "Podaj liczbe naturalna dodatnia -> ";
+		cin >> n;
+	} while (n < 0);
+
+	cout << "Podaj liczbe rzeczywista -> ";
+	cin >> x;
+
+	for (int i = 0; i < (n-1); i++)
+	{
+		x += x;
+		for (int j = 0; j < x; j++)
+		{
+			
+		}
+	}
+	cout << "Wynik potegowania wynosi = " << x << endl;
+}
+#endif // Zadanie3B
+
+#ifdef Zadanie3C
+int main()
+{
+
+}
+#endif // Zadanie3C
 
 
 
