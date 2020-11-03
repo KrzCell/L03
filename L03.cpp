@@ -1,5 +1,7 @@
 ﻿
 #include <iostream>
+#include <time.h>
+#include <cstdio>
 using namespace std;
 
 #define Zadanie3C
@@ -57,19 +59,19 @@ int main()
 	int n = 0;
 	do
 	{
-		cout << "Podaj liczbe naturalna dodatnia -> ";
+		cout << "Podaj liczbe naturalna dodatnia (wykladnik) -> ";
 		cin >> n;
 	} while (n < 0);
 
-	cout << "Podaj liczbe rzeczywista -> ";
+	cout << "Podaj liczbe rzeczywista (podstawe) -> ";
 	cin >> x;
 
-	for (int i = 0; i < (n-1); i++)
+	for (int i = 0; i < x; i++)
 	{
-		x += x;
-		for (int j = 0; j < x; j++)
+		
+		for (int j = 0; j < n; j++)
 		{
-			
+			wynik += x;
 		}
 	}
 	cout << "Wynik potegowania wynosi = " << x << endl;
@@ -79,7 +81,18 @@ int main()
 #ifdef Zadanie3C
 int main()
 {
+	int wiersze = 7, kolumny = 7;
+	char zn1='#', zn2='.';
+	srand(time(0));
 
+	for (int i = 0; i < wiersze; i++)
+	{
+		for (int j = kolumny; j > 0 ; j--)
+		{
+			cout << zn1 << " ";
+		}
+		cout << endl; 
+	}
 }
 #endif // Zadanie3C
 
