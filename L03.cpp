@@ -55,28 +55,31 @@ int main()
 #ifdef Zadanie3B
 int main()
 {
-	double x = 0, wynik = 1;
+	int x = 0;
 	int n = 0;
+	
+
+	cout << "Podaj liczbe rzeczywista (podstawe) -> ";
+	cin >> x;
 	do
 	{
 		cout << "Podaj liczbe naturalna dodatnia (wykladnik) -> ";
 		cin >> n;
 	} while (n < 0);
 
-	cout << "Podaj liczbe rzeczywista (podstawe) -> ";
-	cin >> x;
+	int d = x;
+	int w = x;
 
 	for (int i = 1; i < n; i++)
 	{
-		x += x;
-
-		for (int j = 1; j < x; j++)
+		x = w;
+		for (int j = 1; j < d; j++)
 		{
-			wynik=wynik + x;
+			w += x;
 		}
 		
 	}
-	cout << "Wynik potegowania wynosi = " << x << "   " << wynik << endl;
+	cout << "Wynik potegowania wynosi = " << w << endl;
 }
 #endif // Zadanie3B
 
